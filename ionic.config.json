@@ -2,5 +2,11 @@
   "name": "pruebaNrsGroup",
   "app_id": "",
   "type": "ionic-angular",
+   "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "https://swapi.co/api/"
+    }
+  ],
   "integrations": {}
 }
