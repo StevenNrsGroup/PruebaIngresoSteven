@@ -48,5 +48,15 @@ export class RestProvider {
 	  });
   }
 
+   obtenerPeople(url) {
+	  return new Promise(resolve => {
+	    this.http.get(url).subscribe(data => {
+	      resolve(data);
+	    }, err => {
+	      console.log(err);
+	    });
+	  });
+  }
+
 
 }

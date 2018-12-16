@@ -20,6 +20,8 @@
       <h2>Nombre: {{film.title}}</h2>
       <p>Director: {{film.director}}</p>
       <p>Productor: {{film.producer}}</p>
+      <p>Actores:</p> 
+      <a *ngFor="let actor of film.personas"  (click)="abrirModal(actor)"> {{actor.name}}</a>
       
     </ion-item>
   </ion-list>
